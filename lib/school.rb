@@ -24,8 +24,10 @@ class School
   end
   
   def sort
-    @roster.collect do |grade, student_hash|
-      student_hash.sort
+    sorted_list = {}
+    @roster.each do |grade, student_hash|
+      sorted_list[grade] = student_hash.sort
     end
+    sorted_list
   end
 end
