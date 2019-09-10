@@ -20,8 +20,8 @@ class School
   end
   
   def sort
-    ROSTER.collect do |grade, student_hash|
-      student_hash.sort
-    end
+  #  ROSTER.collect do |grade, student_hash|
+   #   student_hash.sort
+    #end
   end
 end
