@@ -8,7 +8,11 @@ class School
   end
   
   def add_student(name, grade)
-    if ROSTER.has_key?(grade) ? ROSTER[grade] = name : ROSTER[grade] << name
+    if ROSTER.has_key?(grade)
+      ROSTER[grade] = name
+    else
+      ROSTER[grade] << name
+    end
   end
   
   def roster
@@ -24,5 +28,4 @@ class School
    #   student_hash.sort
     #end
   end
-end
 end
