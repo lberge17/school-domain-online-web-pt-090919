@@ -20,7 +20,7 @@ class School
   end
   
   def sort
-    
+    ROSTER.each
   end
   
 end
