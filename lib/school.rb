@@ -8,7 +8,7 @@ class School
   end
   
   def add_student(name, grade)
-    if ROSTER.include?(grade.to_) ? ROSTER[grade] = name : ROSTER[grade] << name
+    if ROSTER.include?(grade.to_sym) ? ROSTER[grade] = name : ROSTER[grade] << name
   end
   
   def roster
