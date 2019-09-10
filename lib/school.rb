@@ -11,21 +11,20 @@ class School
       @roster[grade] << name
     else
       @roster[grade] = []
-      ROSTER[grade] << name
+      @roster[grade] << name
     end
-    #ROSTER
   end
   
   def roster
-    ROSTER
+    @roster
   end
   
   def grade(grade)
-    ROSTER[grade]
+    @roster[grade]
   end
   
   def sort
-    ROSTER.collect do |grade, student_hash|
+    @roster.collect do |grade, student_hash|
       student_hash.sort
     end
   end
