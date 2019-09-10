@@ -24,5 +24,4 @@ class School
       student_hash.sort
     end
   end
-  
 end
