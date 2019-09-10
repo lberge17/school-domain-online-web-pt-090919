@@ -9,8 +9,9 @@ class School
   
   def add_student(name, grade)
     if ROSTER.has_key?(grade.to_s)
-      ROSTER[grade] = name
+      ROSTER[grade] << name
     else
+      ROSTER[grade] = []
       ROSTER[grade] << name
     end
     ROSTER
