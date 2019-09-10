@@ -14,7 +14,7 @@ class School
       ROSTER[grade] = []
       ROSTER[grade] << name
     end
-    ROSTER
+    #ROSTER
   end
   
   def roster
